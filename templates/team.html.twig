@@ -1,0 +1,28 @@
+{% extends "layout.html.twig" %}
+   
+    {% block main %}
+        <h1> 
+            {% for post in posts %}
+                {{nom de la team}}
+            {% endfor%}
+        </h1>
+        <article>
+            <img src="{{ img_joueur }}" alt="{{ nom_joueur }}">
+            <p>
+                {{ nom_joueur }}
+            </p>
+            <input type="submit" value="DECOUVREZ {{ nom_joueur }}"/>
+            <a href ="{{ lien }}"> 
+                DECOUVREZ {{ nom_joueur }} 
+            </a>
+        </article>
+    {% endblock %} 
+
+
+   
+
+   
+        
+    
+   
+        

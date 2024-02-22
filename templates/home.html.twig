@@ -1,0 +1,32 @@
+{% extends "layout.html.twig" %}
+
+{% block main %}
+ <main class= "main">
+  <section class= 'background-img'>
+    <h2>
+      TOUT SUR LA LEAGUE
+    </h2>
+      <p>
+        Les player, les teams et {{l&apos;actu|e}}  des matchs
+      </p>
+  </section>
+
+   <h3>LA TEAM À LA UNE </h3>
+      <article>
+        {% for post in posts %}
+         {{ post.title }}
+      </article>
+    
+    <h3>LES PLAYERS À LA UNE  </h3>
+      <article>
+        {% for post in posts %}
+         {{ post.title }}
+      </article>
+    
+    <h3>LE DERNIER MATCH</h3>
+      <article>
+        {% for post in posts %}
+         {{ post.title }}
+      </article>
+  </main>
+{% endblock %}
